@@ -18,12 +18,17 @@ final class HemlockTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testUserCreation() {
+        HLCore.Web.createUser(email: "test@email.org") { result, userID, masterKey in
+            print("Result: \(result)")
+            print("User ID: \(userID)")
+            print("Master key: \(masterKey.hexString)")
+        }
+        
+        // Just so we have time to view the result
+        do {
+            sleep(3)
+        }
     }
 
     func testPerformanceExample() throws {

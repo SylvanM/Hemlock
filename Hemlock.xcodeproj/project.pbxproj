@@ -14,6 +14,9 @@
 		AEB38CB52C534F96007B844C /* HemlockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB38CB42C534F96007B844C /* HemlockTests.swift */; };
 		AEB38CBF2C534F96007B844C /* HemlockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB38CBE2C534F96007B844C /* HemlockUITests.swift */; };
 		AEB38CC12C534F96007B844C /* HemlockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB38CC02C534F96007B844C /* HemlockUITestsLaunchTests.swift */; };
+		AEB38CCF2C534FF5007B844C /* libhemlock_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB38CCE2C534FDB007B844C /* libhemlock_lib.a */; };
+		AEB38CD62C53508D007B844C /* HLCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB38CD52C53508D007B844C /* HLCore.swift */; };
+		AEB38CD82C5350A9007B844C /* Bytes+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB38CD72C5350A9007B844C /* Bytes+String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,10 @@
 		AEB38CBA2C534F96007B844C /* HemlockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HemlockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB38CBE2C534F96007B844C /* HemlockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HemlockUITests.swift; sourceTree = "<group>"; };
 		AEB38CC02C534F96007B844C /* HemlockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HemlockUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AEB38CCE2C534FDB007B844C /* libhemlock_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libhemlock_lib.a; path = "../../Crypto stuff/hemlock_lib/target/debug/libhemlock_lib.a"; sourceTree = "<group>"; };
+		AEB38CD22C535060007B844C /* hemlock_lib_bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hemlock_lib_bridge.h; sourceTree = "<group>"; };
+		AEB38CD52C53508D007B844C /* HLCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLCore.swift; sourceTree = "<group>"; };
+		AEB38CD72C5350A9007B844C /* Bytes+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bytes+String.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB38CCF2C534FF5007B844C /* libhemlock_lib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,10 +83,12 @@
 		AEB38C962C534F95007B844C = {
 			isa = PBXGroup;
 			children = (
+				AEB38CD22C535060007B844C /* hemlock_lib_bridge.h */,
 				AEB38CA12C534F95007B844C /* Hemlock */,
 				AEB38CB32C534F96007B844C /* HemlockTests */,
 				AEB38CBD2C534F96007B844C /* HemlockUITests */,
 				AEB38CA02C534F95007B844C /* Products */,
+				AEB38CCD2C534FDB007B844C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +105,7 @@
 		AEB38CA12C534F95007B844C /* Hemlock */ = {
 			isa = PBXGroup;
 			children = (
+				AEB38CD32C53507D007B844C /* Utility */,
 				AEB38CA22C534F95007B844C /* AppDelegate.swift */,
 				AEB38CA42C534F95007B844C /* ViewController.swift */,
 				AEB38CA62C534F96007B844C /* Assets.xcassets */,
@@ -119,6 +130,31 @@
 				AEB38CC02C534F96007B844C /* HemlockUITestsLaunchTests.swift */,
 			);
 			path = HemlockUITests;
+			sourceTree = "<group>";
+		};
+		AEB38CCD2C534FDB007B844C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEB38CCE2C534FDB007B844C /* libhemlock_lib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEB38CD32C53507D007B844C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AEB38CD42C535084007B844C /* HL Core API */,
+				AEB38CD72C5350A9007B844C /* Bytes+String.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		AEB38CD42C535084007B844C /* HL Core API */ = {
+			isa = PBXGroup;
+			children = (
+				AEB38CD52C53508D007B844C /* HLCore.swift */,
+			);
+			path = "HL Core API";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +289,8 @@
 			files = (
 				AEB38CA52C534F95007B844C /* ViewController.swift in Sources */,
 				AEB38CA32C534F95007B844C /* AppDelegate.swift in Sources */,
+				AEB38CD82C5350A9007B844C /* Bytes+String.swift in Sources */,
+				AEB38CD62C53508D007B844C /* HLCore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/hemlock_lib/target/debug";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -359,6 +398,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OBJC_BRIDGING_HEADER = hemlock_lib_bridge.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -409,12 +449,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/hemlock_lib/target/debug";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = hemlock_lib_bridge.h;
 			};
 			name = Release;
 		};
