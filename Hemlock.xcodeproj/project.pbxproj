@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AEB38CA32C534F95007B844C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB38CA22C534F95007B844C /* AppDelegate.swift */; };
+		AEB38CA52C534F95007B844C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB38CA42C534F95007B844C /* ViewController.swift */; };
+		AEB38CA72C534F96007B844C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB38CA62C534F96007B844C /* Assets.xcassets */; };
+		AEB38CAA2C534F96007B844C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AEB38CA92C534F96007B844C /* Base */; };
+		AEB38CB52C534F96007B844C /* HemlockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB38CB42C534F96007B844C /* HemlockTests.swift */; };
+		AEB38CBF2C534F96007B844C /* HemlockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB38CBE2C534F96007B844C /* HemlockUITests.swift */; };
+		AEB38CC12C534F96007B844C /* HemlockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB38CC02C534F96007B844C /* HemlockUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AEB38CB12C534F96007B844C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEB38C972C534F95007B844C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEB38C9E2C534F95007B844C;
+			remoteInfo = Hemlock;
+		};
+		AEB38CBB2C534F96007B844C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEB38C972C534F95007B844C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEB38C9E2C534F95007B844C;
+			remoteInfo = Hemlock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AEB38C9F2C534F95007B844C /* Hemlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hemlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEB38CA22C534F95007B844C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AEB38CA42C534F95007B844C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AEB38CA62C534F96007B844C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEB38CA92C534F96007B844C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AEB38CAB2C534F96007B844C /* Hemlock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hemlock.entitlements; sourceTree = "<group>"; };
+		AEB38CB02C534F96007B844C /* HemlockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HemlockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEB38CB42C534F96007B844C /* HemlockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HemlockTests.swift; sourceTree = "<group>"; };
+		AEB38CBA2C534F96007B844C /* HemlockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HemlockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEB38CBE2C534F96007B844C /* HemlockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HemlockUITests.swift; sourceTree = "<group>"; };
+		AEB38CC02C534F96007B844C /* HemlockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HemlockUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEB38C9C2C534F95007B844C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEB38CAD2C534F96007B844C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEB38CB72C534F96007B844C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEB38C962C534F95007B844C = {
+			isa = PBXGroup;
+			children = (
+				AEB38CA12C534F95007B844C /* Hemlock */,
+				AEB38CB32C534F96007B844C /* HemlockTests */,
+				AEB38CBD2C534F96007B844C /* HemlockUITests */,
+				AEB38CA02C534F95007B844C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEB38CA02C534F95007B844C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEB38C9F2C534F95007B844C /* Hemlock.app */,
+				AEB38CB02C534F96007B844C /* HemlockTests.xctest */,
+				AEB38CBA2C534F96007B844C /* HemlockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEB38CA12C534F95007B844C /* Hemlock */ = {
+			isa = PBXGroup;
+			children = (
+				AEB38CA22C534F95007B844C /* AppDelegate.swift */,
+				AEB38CA42C534F95007B844C /* ViewController.swift */,
+				AEB38CA62C534F96007B844C /* Assets.xcassets */,
+				AEB38CA82C534F96007B844C /* Main.storyboard */,
+				AEB38CAB2C534F96007B844C /* Hemlock.entitlements */,
+			);
+			path = Hemlock;
+			sourceTree = "<group>";
+		};
+		AEB38CB32C534F96007B844C /* HemlockTests */ = {
+			isa = PBXGroup;
+			children = (
+				AEB38CB42C534F96007B844C /* HemlockTests.swift */,
+			);
+			path = HemlockTests;
+			sourceTree = "<group>";
+		};
+		AEB38CBD2C534F96007B844C /* HemlockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AEB38CBE2C534F96007B844C /* HemlockUITests.swift */,
+				AEB38CC02C534F96007B844C /* HemlockUITestsLaunchTests.swift */,
+			);
+			path = HemlockUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEB38C9E2C534F95007B844C /* Hemlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEB38CC42C534F96007B844C /* Build configuration list for PBXNativeTarget "Hemlock" */;
+			buildPhases = (
+				AEB38C9B2C534F95007B844C /* Sources */,
+				AEB38C9C2C534F95007B844C /* Frameworks */,
+				AEB38C9D2C534F95007B844C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hemlock;
+			productName = Hemlock;
+			productReference = AEB38C9F2C534F95007B844C /* Hemlock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AEB38CAF2C534F96007B844C /* HemlockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEB38CC72C534F96007B844C /* Build configuration list for PBXNativeTarget "HemlockTests" */;
+			buildPhases = (
+				AEB38CAC2C534F96007B844C /* Sources */,
+				AEB38CAD2C534F96007B844C /* Frameworks */,
+				AEB38CAE2C534F96007B844C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEB38CB22C534F96007B844C /* PBXTargetDependency */,
+			);
+			name = HemlockTests;
+			productName = HemlockTests;
+			productReference = AEB38CB02C534F96007B844C /* HemlockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AEB38CB92C534F96007B844C /* HemlockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEB38CCA2C534F96007B844C /* Build configuration list for PBXNativeTarget "HemlockUITests" */;
+			buildPhases = (
+				AEB38CB62C534F96007B844C /* Sources */,
+				AEB38CB72C534F96007B844C /* Frameworks */,
+				AEB38CB82C534F96007B844C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEB38CBC2C534F96007B844C /* PBXTargetDependency */,
+			);
+			name = HemlockUITests;
+			productName = HemlockUITests;
+			productReference = AEB38CBA2C534F96007B844C /* HemlockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEB38C972C534F95007B844C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					AEB38C9E2C534F95007B844C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					AEB38CAF2C534F96007B844C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = AEB38C9E2C534F95007B844C;
+					};
+					AEB38CB92C534F96007B844C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = AEB38C9E2C534F95007B844C;
+					};
+				};
+			};
+			buildConfigurationList = AEB38C9A2C534F95007B844C /* Build configuration list for PBXProject "Hemlock" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AEB38C962C534F95007B844C;
+			productRefGroup = AEB38CA02C534F95007B844C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEB38C9E2C534F95007B844C /* Hemlock */,
+				AEB38CAF2C534F96007B844C /* HemlockTests */,
+				AEB38CB92C534F96007B844C /* HemlockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEB38C9D2C534F95007B844C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEB38CA72C534F96007B844C /* Assets.xcassets in Resources */,
+				AEB38CAA2C534F96007B844C /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEB38CAE2C534F96007B844C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEB38CB82C534F96007B844C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEB38C9B2C534F95007B844C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEB38CA52C534F95007B844C /* ViewController.swift in Sources */,
+				AEB38CA32C534F95007B844C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEB38CAC2C534F96007B844C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEB38CB52C534F96007B844C /* HemlockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEB38CB62C534F96007B844C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEB38CC12C534F96007B844C /* HemlockUITestsLaunchTests.swift in Sources */,
+				AEB38CBF2C534F96007B844C /* HemlockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEB38CB22C534F96007B844C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEB38C9E2C534F95007B844C /* Hemlock */;
+			targetProxy = AEB38CB12C534F96007B844C /* PBXContainerItemProxy */;
+		};
+		AEB38CBC2C534F96007B844C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEB38C9E2C534F95007B844C /* Hemlock */;
+			targetProxy = AEB38CBB2C534F96007B844C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AEB38CA82C534F96007B844C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEB38CA92C534F96007B844C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AEB38CC22C534F96007B844C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AEB38CC32C534F96007B844C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AEB38CC52C534F96007B844C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hemlock/Hemlock.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JDSTZ7K2MV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sylvanm.Hemlock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AEB38CC62C534F96007B844C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hemlock/Hemlock.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JDSTZ7K2MV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sylvanm.Hemlock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AEB38CC82C534F96007B844C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JDSTZ7K2MV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sylvanm.HemlockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hemlock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hemlock";
+			};
+			name = Debug;
+		};
+		AEB38CC92C534F96007B844C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JDSTZ7K2MV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sylvanm.HemlockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hemlock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hemlock";
+			};
+			name = Release;
+		};
+		AEB38CCB2C534F96007B844C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JDSTZ7K2MV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sylvanm.HemlockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Hemlock;
+			};
+			name = Debug;
+		};
+		AEB38CCC2C534F96007B844C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JDSTZ7K2MV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sylvanm.HemlockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Hemlock;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEB38C9A2C534F95007B844C /* Build configuration list for PBXProject "Hemlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEB38CC22C534F96007B844C /* Debug */,
+				AEB38CC32C534F96007B844C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEB38CC42C534F96007B844C /* Build configuration list for PBXNativeTarget "Hemlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEB38CC52C534F96007B844C /* Debug */,
+				AEB38CC62C534F96007B844C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEB38CC72C534F96007B844C /* Build configuration list for PBXNativeTarget "HemlockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEB38CC82C534F96007B844C /* Debug */,
+				AEB38CC92C534F96007B844C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEB38CCA2C534F96007B844C /* Build configuration list for PBXNativeTarget "HemlockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEB38CCB2C534F96007B844C /* Debug */,
+				AEB38CCC2C534F96007B844C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AEB38C972C534F95007B844C /* Project object */;
+}
