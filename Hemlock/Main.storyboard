@@ -806,7 +806,7 @@
             <objects>
                 <windowController id="wLZ-Si-S0I" customClass="MainWindowController" customModule="Hemlock" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Hemlock" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" toolbarStyle="unified" id="oUf-SV-PBQ">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="211" y="270" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1512" height="950"/>
@@ -841,8 +841,8 @@
             <objects>
                 <splitViewController id="BH8-7f-E7R" customClass="MainViewController" customModule="Hemlock" customModuleProvider="target" sceneMemberID="viewController">
                     <splitViewItems>
-                        <splitViewItem id="0D9-2R-PHW"/>
-                        <splitViewItem id="NsP-SS-hZY"/>
+                        <splitViewItem canCollapse="YES" holdingPriority="260" behavior="sidebar" separatorStyle="none" id="0D9-2R-PHW"/>
+                        <splitViewItem separatorStyle="line" id="NsP-SS-hZY"/>
                     </splitViewItems>
                     <splitView key="splitView" dividerStyle="thin" vertical="YES" id="BCE-Ec-Y7g">
                         <rect key="frame" x="0.0" y="0.0" width="494" height="323"/>
@@ -870,7 +870,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button imageHugsTitle="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oI4-Dw-nXe">
-                                <rect key="frame" x="13" y="447" width="176" height="40"/>
+                                <rect key="frame" x="13" y="408" width="176" height="40"/>
                                 <buttonCell key="cell" type="push" title="My Shares" bezelStyle="rounded" imagePosition="leading" alignment="left" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Vrr-KP-YJL">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -886,7 +886,7 @@
                                 </connections>
                             </button>
                             <button imageHugsTitle="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="X20-Wc-a7R">
-                                <rect key="frame" x="13" y="407" width="176" height="40"/>
+                                <rect key="frame" x="13" y="368" width="176" height="40"/>
                                 <buttonCell key="cell" type="push" title="My Files" bezelStyle="rounded" imagePosition="leading" alignment="left" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9fp-46-0S8">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -922,7 +922,7 @@
                             <constraint firstItem="UVx-Ng-FHs" firstAttribute="leading" secondItem="evk-lD-TAi" secondAttribute="leading" constant="19" id="HsU-dq-sjW"/>
                             <constraint firstAttribute="trailing" secondItem="X20-Wc-a7R" secondAttribute="trailing" constant="19" id="NV8-of-PRM"/>
                             <constraint firstAttribute="bottom" secondItem="UVx-Ng-FHs" secondAttribute="bottom" constant="20" symbolic="YES" id="SRj-ud-nqO"/>
-                            <constraint firstItem="oI4-Dw-nXe" firstAttribute="top" secondItem="evk-lD-TAi" secondAttribute="top" constant="21" id="WBW-gY-Tnm"/>
+                            <constraint firstItem="oI4-Dw-nXe" firstAttribute="top" secondItem="evk-lD-TAi" secondAttribute="top" constant="60" id="WBW-gY-Tnm"/>
                             <constraint firstItem="X20-Wc-a7R" firstAttribute="top" secondItem="oI4-Dw-nXe" secondAttribute="bottom" constant="12" symbolic="YES" id="e3P-jI-arT"/>
                             <constraint firstItem="oI4-Dw-nXe" firstAttribute="leading" secondItem="evk-lD-TAi" secondAttribute="leading" constant="19" id="fYN-Lm-4fd"/>
                             <constraint firstAttribute="trailing" secondItem="oI4-Dw-nXe" secondAttribute="trailing" constant="19" id="o22-3i-Yyf"/>
@@ -956,8 +956,8 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P4V-7k-P1D">
-                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                                <imageCell key="cell" controlSize="large" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSColorPanel" id="mfh-ON-h4L"/>
+                                <rect key="frame" x="0.0" y="-2.5" width="450" height="306"/>
+                                <imageCell key="cell" controlSize="large" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="lock" catalog="system" id="mfh-ON-h4L"/>
                             </imageView>
                         </subviews>
                         <constraints>
@@ -980,18 +980,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UgX-2d-XPL">
-                                <rect key="frame" x="18" y="264" width="32" height="16"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Files" id="6qJ-vD-C9L">
-                                    <font key="font" usesAppearanceFont="YES"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JDI-27-TVq">
+                                <rect key="frame" x="0.0" y="-2" width="450.5" height="305"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="folder" catalog="system" id="THH-BJ-n5G"/>
+                            </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="UgX-2d-XPL" firstAttribute="top" secondItem="hfz-jQ-I2W" secondAttribute="top" constant="20" symbolic="YES" id="ASK-SF-Ax1"/>
-                            <constraint firstItem="UgX-2d-XPL" firstAttribute="leading" secondItem="hfz-jQ-I2W" secondAttribute="leading" constant="20" symbolic="YES" id="DJn-l8-meW"/>
+                            <constraint firstAttribute="trailing" secondItem="JDI-27-TVq" secondAttribute="trailing" id="7wT-1c-4ub"/>
+                            <constraint firstItem="JDI-27-TVq" firstAttribute="top" secondItem="hfz-jQ-I2W" secondAttribute="top" id="M9U-9G-f6A"/>
+                            <constraint firstAttribute="bottom" secondItem="JDI-27-TVq" secondAttribute="bottom" id="Sgh-B0-eft"/>
+                            <constraint firstItem="JDI-27-TVq" firstAttribute="leading" secondItem="hfz-jQ-I2W" secondAttribute="leading" id="pmh-iF-WY5"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -1007,18 +1005,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ljo-Cs-oaz">
-                                <rect key="frame" x="18" y="264" width="54" height="16"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Account" id="5RH-5y-4uc">
-                                    <font key="font" usesAppearanceFont="YES"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0eC-9Q-ESa">
+                                <rect key="frame" x="0.0" y="-2.5" width="450.5" height="305"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="person" catalog="system" id="br2-fs-ju4"/>
+                            </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="ljo-Cs-oaz" firstAttribute="top" secondItem="rZH-Vs-G85" secondAttribute="top" constant="20" symbolic="YES" id="iM5-sL-xSA"/>
-                            <constraint firstItem="ljo-Cs-oaz" firstAttribute="leading" secondItem="rZH-Vs-G85" secondAttribute="leading" constant="20" symbolic="YES" id="t9T-Sb-x8k"/>
+                            <constraint firstAttribute="bottom" secondItem="0eC-9Q-ESa" secondAttribute="bottom" id="2HE-Wx-fc6"/>
+                            <constraint firstItem="0eC-9Q-ESa" firstAttribute="top" secondItem="rZH-Vs-G85" secondAttribute="top" id="7Af-Ww-sMi"/>
+                            <constraint firstItem="0eC-9Q-ESa" firstAttribute="leading" secondItem="rZH-Vs-G85" secondAttribute="leading" id="auS-N3-kpN"/>
+                            <constraint firstAttribute="trailing" secondItem="0eC-9Q-ESa" secondAttribute="trailing" id="xgT-me-aFN"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -1026,25 +1022,11 @@
             </objects>
             <point key="canvasLocation" x="2499" y="1198"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="hpZ-kZ-cN3">
-            <objects>
-                <viewController id="r9M-Tf-cWJ" sceneMemberID="viewController">
-                    <view key="view" id="Jcn-LH-vEn">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="3CN-7b-Ro7" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2081" y="755"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="NSColorPanel" width="32" height="32"/>
         <image name="folder" catalog="system" width="23" height="18"/>
         <image name="lock" catalog="system" width="19" height="19"/>
-        <image name="person" catalog="system" width="19" height="19"/>
+        <image name="person" catalog="system" width="15" height="14"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

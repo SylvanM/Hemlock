@@ -27,7 +27,6 @@ class ContentViewController: NSViewController {
         let bounds = self.view.bounds
         
         for vc in [sharesVC, filesVC, accountVC] {
-//            vc!.view.frame = self.view.bounds
             
             addChild(vc!)
             view.addSubview(vc!.view)
@@ -40,14 +39,12 @@ class ContentViewController: NSViewController {
                 vc!.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
             ])
             
-            
-            
             self.view.layoutSubtreeIfNeeded()
             
         }
         
         for vc in [sharesVC, filesVC, accountVC] {
-            self.view.frame = NSRect(x: 0, y: 0, width: 500, height: 500)
+            self.view.frame = NSRect(x: 0, y: 0, width: 700, height: 600)
             vc!.view.frame = view.bounds
         }
         
