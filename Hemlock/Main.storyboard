@@ -872,10 +872,15 @@
                             <button imageHugsTitle="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oI4-Dw-nXe">
                                 <rect key="frame" x="13" y="447" width="176" height="40"/>
                                 <buttonCell key="cell" type="push" title="My Shares" bezelStyle="rounded" imagePosition="leading" alignment="left" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Vrr-KP-YJL">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                     <imageReference key="image" image="lock" catalog="system" symbolScale="large"/>
                                 </buttonCell>
+                                <color key="contentTintColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="hsV-po-rL8"/>
+                                    <constraint firstAttribute="width" constant="164" id="uoo-Zv-50D"/>
+                                </constraints>
                                 <connections>
                                     <action selector="sharesButtonPressed:" target="Ljs-iu-ra7" id="Qb0-Uh-7MQ"/>
                                 </connections>
@@ -883,10 +888,15 @@
                             <button imageHugsTitle="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="X20-Wc-a7R">
                                 <rect key="frame" x="13" y="407" width="176" height="40"/>
                                 <buttonCell key="cell" type="push" title="My Files" bezelStyle="rounded" imagePosition="leading" alignment="left" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9fp-46-0S8">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                     <imageReference key="image" image="folder" catalog="system" symbolScale="large"/>
                                 </buttonCell>
+                                <color key="contentTintColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="2h0-80-Xpc"/>
+                                    <constraint firstAttribute="width" constant="164" id="Qvy-pQ-bb9"/>
+                                </constraints>
                                 <connections>
                                     <action selector="filesButtonPressed:" target="Ljs-iu-ra7" id="ZWC-CZ-3XK"/>
                                 </connections>
@@ -894,10 +904,14 @@
                             <button imageHugsTitle="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UVx-Ng-FHs">
                                 <rect key="frame" x="13" y="14" width="176" height="40"/>
                                 <buttonCell key="cell" type="push" title="Account" bezelStyle="rounded" imagePosition="left" alignment="left" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aac-lq-EBn">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                     <imageReference key="image" image="person" catalog="system" symbolScale="large"/>
                                 </buttonCell>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="DmN-g3-sBN"/>
+                                    <constraint firstAttribute="height" constant="28" id="lAi-ub-lbL"/>
+                                </constraints>
                                 <connections>
                                     <action selector="accountButtonPressed:" target="Ljs-iu-ra7" id="p0H-Yx-jaV"/>
                                 </connections>
@@ -928,32 +942,106 @@
         <!--Content View Controller-->
         <scene sceneID="iwE-iA-2dR">
             <objects>
-                <viewController id="KEF-tQ-LcI" customClass="ContentViewController" customModule="Hemlock" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="yn0-je-1zw">
-                        <rect key="frame" x="0.0" y="0.0" width="550" height="502"/>
+                <customObject id="qPv-wM-aPL" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <viewController id="KEF-tQ-LcI" customClass="ContentViewController" customModule="Hemlock" customModuleProvider="target" sceneMemberID="viewController"/>
+            </objects>
+            <point key="canvasLocation" x="1478" y="755"/>
+        </scene>
+        <!--Shares View Controller-->
+        <scene sceneID="ajW-qU-j7e">
+            <objects>
+                <viewController storyboardIdentifier="sharesView" id="rWt-Z9-6dT" customClass="SharesViewController" customModule="Hemlock" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="Ocv-yJ-uYe">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FAY-eS-V7T">
-                                <rect key="frame" x="18" y="466" width="37" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="pJH-MT-v9X">
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P4V-7k-P1D">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <imageCell key="cell" controlSize="large" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSColorPanel" id="mfh-ON-h4L"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="P4V-7k-P1D" firstAttribute="top" secondItem="Ocv-yJ-uYe" secondAttribute="top" id="Fnr-K3-NuV"/>
+                            <constraint firstAttribute="bottom" secondItem="P4V-7k-P1D" secondAttribute="bottom" id="KBQ-Y0-622"/>
+                            <constraint firstItem="P4V-7k-P1D" firstAttribute="leading" secondItem="Ocv-yJ-uYe" secondAttribute="leading" id="PmM-Ti-DzB"/>
+                            <constraint firstAttribute="trailing" secondItem="P4V-7k-P1D" secondAttribute="trailing" id="qsB-Xx-gQc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="1au-OP-yjW" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1478" y="1198"/>
+        </scene>
+        <!--Files View Controller-->
+        <scene sceneID="H6E-Mu-5Z6">
+            <objects>
+                <viewController storyboardIdentifier="filesView" id="90E-9x-Hz4" customClass="FilesViewController" customModule="Hemlock" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="hfz-jQ-I2W">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UgX-2d-XPL">
+                                <rect key="frame" x="18" y="264" width="32" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Files" id="6qJ-vD-C9L">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="UgX-2d-XPL" firstAttribute="top" secondItem="hfz-jQ-I2W" secondAttribute="top" constant="20" symbolic="YES" id="ASK-SF-Ax1"/>
+                            <constraint firstItem="UgX-2d-XPL" firstAttribute="leading" secondItem="hfz-jQ-I2W" secondAttribute="leading" constant="20" symbolic="YES" id="DJn-l8-meW"/>
+                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="testLabel" destination="FAY-eS-V7T" id="r8j-4Z-QDG"/>
-                    </connections>
                 </viewController>
-                <customObject id="qPv-wM-aPL" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="rTD-YV-ALs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1530" y="856"/>
+            <point key="canvasLocation" x="1988" y="1198"/>
+        </scene>
+        <!--Account View Controller-->
+        <scene sceneID="bGb-Zw-ar9">
+            <objects>
+                <viewController storyboardIdentifier="accountView" id="UdS-h3-8Xl" customClass="AccountViewController" customModule="Hemlock" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="rZH-Vs-G85">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ljo-Cs-oaz">
+                                <rect key="frame" x="18" y="264" width="54" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Account" id="5RH-5y-4uc">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ljo-Cs-oaz" firstAttribute="top" secondItem="rZH-Vs-G85" secondAttribute="top" constant="20" symbolic="YES" id="iM5-sL-xSA"/>
+                            <constraint firstItem="ljo-Cs-oaz" firstAttribute="leading" secondItem="rZH-Vs-G85" secondAttribute="leading" constant="20" symbolic="YES" id="t9T-Sb-x8k"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="daa-KY-bzw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2499" y="1198"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hpZ-kZ-cN3">
+            <objects>
+                <viewController id="r9M-Tf-cWJ" sceneMemberID="viewController">
+                    <view key="view" id="Jcn-LH-vEn">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="3CN-7b-Ro7" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2081" y="755"/>
         </scene>
     </scenes>
     <resources>
+        <image name="NSColorPanel" width="32" height="32"/>
         <image name="folder" catalog="system" width="23" height="18"/>
         <image name="lock" catalog="system" width="19" height="19"/>
         <image name="person" catalog="system" width="19" height="19"/>

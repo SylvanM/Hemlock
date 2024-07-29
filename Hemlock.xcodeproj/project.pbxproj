@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AE0CED162C581DA500D4E7CA /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0CED152C581DA500D4E7CA /* MainWindowController.swift */; };
+		AE0CED1B2C582B6100D4E7CA /* SharesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0CED1A2C582B6100D4E7CA /* SharesViewController.swift */; };
+		AE0CED1E2C582B6D00D4E7CA /* FilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0CED1C2C582B6D00D4E7CA /* FilesViewController.swift */; };
+		AE0CED222C582B8000D4E7CA /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0CED202C582B8000D4E7CA /* AccountViewController.swift */; };
+		AE0CED252C58321700D4E7CA /* SimpleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0CED242C58321700D4E7CA /* SimpleAnimator.swift */; };
 		AEB38CA32C534F95007B844C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB38CA22C534F95007B844C /* AppDelegate.swift */; };
 		AEB38CA52C534F95007B844C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB38CA42C534F95007B844C /* WelcomeViewController.swift */; };
 		AEB38CA72C534F96007B844C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB38CA62C534F96007B844C /* Assets.xcassets */; };
@@ -45,6 +49,10 @@
 
 /* Begin PBXFileReference section */
 		AE0CED152C581DA500D4E7CA /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		AE0CED1A2C582B6100D4E7CA /* SharesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharesViewController.swift; sourceTree = "<group>"; };
+		AE0CED1C2C582B6D00D4E7CA /* FilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesViewController.swift; sourceTree = "<group>"; };
+		AE0CED202C582B8000D4E7CA /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		AE0CED242C58321700D4E7CA /* SimpleAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAnimator.swift; sourceTree = "<group>"; };
 		AEB38C9F2C534F95007B844C /* Hemlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hemlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB38CA22C534F95007B844C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEB38CA42C534F95007B844C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +102,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE0CED192C582AF400D4E7CA /* Sub Content */ = {
+			isa = PBXGroup;
+			children = (
+				AEB38CF82C57F458007B844C /* ContentViewController.swift */,
+				AE0CED1A2C582B6100D4E7CA /* SharesViewController.swift */,
+				AE0CED1C2C582B6D00D4E7CA /* FilesViewController.swift */,
+				AE0CED202C582B8000D4E7CA /* AccountViewController.swift */,
+				AE0CED242C58321700D4E7CA /* SimpleAnimator.swift */,
+			);
+			path = "Sub Content";
+			sourceTree = "<group>";
+		};
 		AEB38C962C534F95007B844C = {
 			isa = PBXGroup;
 			children = (
@@ -194,9 +214,9 @@
 		AEB38CEC2C56E31C007B844C /* Main View */ = {
 			isa = PBXGroup;
 			children = (
+				AE0CED192C582AF400D4E7CA /* Sub Content */,
 				AEB38CF02C57F40D007B844C /* MainViewController.swift */,
 				AEB38CF42C57F43F007B844C /* TablePanelViewController.swift */,
-				AEB38CF82C57F458007B844C /* ContentViewController.swift */,
 				AE0CED152C581DA500D4E7CA /* MainWindowController.swift */,
 			);
 			path = "Main View";
@@ -342,14 +362,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEB38CF62C57F43F007B844C /* TablePanelViewController.swift in Sources */,
+				AE0CED1B2C582B6100D4E7CA /* SharesViewController.swift in Sources */,
+				AE0CED222C582B8000D4E7CA /* AccountViewController.swift in Sources */,
 				AEB38CF22C57F40D007B844C /* MainViewController.swift in Sources */,
 				AEB38CEF2C57EBA2007B844C /* MainViewPresentationAnimation.swift in Sources */,
 				AEB38CA52C534F95007B844C /* WelcomeViewController.swift in Sources */,
+				AE0CED252C58321700D4E7CA /* SimpleAnimator.swift in Sources */,
 				AE0CED162C581DA500D4E7CA /* MainWindowController.swift in Sources */,
 				AEB38CFA2C57F458007B844C /* ContentViewController.swift in Sources */,
 				AEB38CDB2C549F2C007B844C /* SavedUserData.swift in Sources */,
 				AEB38CA32C534F95007B844C /* AppDelegate.swift in Sources */,
 				AEB38CD82C5350A9007B844C /* Bytes+String.swift in Sources */,
+				AE0CED1E2C582B6D00D4E7CA /* FilesViewController.swift in Sources */,
 				AEB38CD62C53508D007B844C /* HLCore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

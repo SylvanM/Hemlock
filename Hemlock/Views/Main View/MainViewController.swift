@@ -20,8 +20,10 @@ class MainViewController: NSSplitViewController {
         super.viewDidLoad()
         // Do view setup here.
         
-        tablePanelView = (splitViewItems[0].viewController as! TablePanelViewController)
-        contentViewController = (splitViewItems[1].viewController as! ContentViewController)
+        tablePanelView = splitViewItems[0].viewController as? TablePanelViewController
+        contentViewController = splitViewItems[1].viewController as? ContentViewController
+        
+        contentViewController.showSharesView()
     }
     
 }
