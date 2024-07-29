@@ -8,6 +8,12 @@
 import Cocoa
 
 class ContentViewController: NSSplitViewController {
+    
+    // MARK: Content View Controller
+
+    @IBOutlet weak var testLabel: NSTextField!
+    
+    // MARK: View Controller
 
     override func viewDidLoad() {
         super.viewDidLoad()

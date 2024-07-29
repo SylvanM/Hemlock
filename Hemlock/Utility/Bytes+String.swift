@@ -27,3 +27,14 @@ extension [UInt8] {
     
 }
 
+extension Data {
+    
+    init(_ hexString: String) {
+        self.init([UInt8](hexString: hexString))
+    }
+    
+    var hexString: String {
+        [UInt8](self).hexString
+    }
+    
+}

@@ -129,7 +129,8 @@ struct HLCore {
     struct Web {
         
         /// A result code that will occur on the web side
-        enum Result {
+        enum Result: Error {
+            
             case success
             case emailTaken
             case connectionError
@@ -149,11 +150,16 @@ struct HLCore {
                     self = .unknownError
                 }
             }
+            
+            
         }
         
         // MARK: Users
         
         static func createUser(email: String, closure: @escaping (Result, UInt64, [UInt8]) -> ()) {
+            closure(.success, 0, [UInt8](repeating: 0, count: 32))
+            return
+            
             #warning("Callback id is zero")
             let (runtime, id) = CallbackTableManager.createCallback { args in
                 

@@ -8,10 +8,35 @@
 import Cocoa
 
 class TablePanelViewController: NSSplitViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do view setup here.
+    
+    // MARK: Properties
+    
+    var mainViewController: MainViewController {
+        self.parent! as! MainViewController
     }
     
+    @IBOutlet weak var sharesButton: NSButton!
+    @IBOutlet weak var filesButton: NSButton!
+    @IBOutlet weak var accountButton: NSButton!
+    
+    
+    // MARK: View Controller
+
+    override func viewDidLoad() {
+        
+    }
+    
+    // MARK: Actions
+    
+    @IBAction func sharesButtonPressed(_ sender: Any) {
+        
+    }
+    
+    @IBAction func filesButtonPressed(_ sender: Any) {
+        
+    }
+    
+    @IBAction func accountButtonPressed(_ sender: Any) {
+        
+    }
 }
