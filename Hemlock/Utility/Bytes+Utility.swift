@@ -38,3 +38,21 @@ extension Data {
     }
     
 }
+
+extension Array {
+    
+    init(fromPointer pointer: UnsafePointer<Element>, count: Int) {
+        let buffer = UnsafeBufferPointer(start: pointer, count: count)
+        self.init(buffer)
+    }
+    
+}
+
+extension String {
+    
+    /// A char pointer that can be directly passed into a C function
+    var cString: UnsafePointer<CChar> {
+        (self as NSString).utf8String!
+    }
+    
+}

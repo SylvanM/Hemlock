@@ -17,6 +17,14 @@ final class HemlockTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func testHeaders() {
+        HLCore.Web.testHeaderConstants()
+    }
+    
+    func testUserDownload() {
+        HLCore.Web.testDownloadUser()
+    }
 
     func testUserCreation() {
         HLCore.Web.createUser(email: "test@email.org") { result, userID, masterKey in

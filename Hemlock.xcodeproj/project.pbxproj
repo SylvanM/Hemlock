@@ -20,7 +20,7 @@
 		AEB38CC12C534F96007B844C /* HemlockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB38CC02C534F96007B844C /* HemlockUITestsLaunchTests.swift */; };
 		AEB38CCF2C534FF5007B844C /* libhemlock_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB38CCE2C534FDB007B844C /* libhemlock_lib.a */; };
 		AEB38CD62C53508D007B844C /* HLCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB38CD52C53508D007B844C /* HLCore.swift */; };
-		AEB38CD82C5350A9007B844C /* Bytes+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB38CD72C5350A9007B844C /* Bytes+String.swift */; };
+		AEB38CD82C5350A9007B844C /* Bytes+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB38CD72C5350A9007B844C /* Bytes+Utility.swift */; };
 		AEB38CDB2C549F2C007B844C /* SavedUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB38CDA2C549F2C007B844C /* SavedUserData.swift */; };
 		AEB38CDD2C54ACC6007B844C /* UserCreds.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEB38CDC2C54ACC6007B844C /* UserCreds.plist */; };
 		AEB38CE12C55FD86007B844C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB38CE02C55FD86007B844C /* Main.storyboard */; };
@@ -28,6 +28,7 @@
 		AEB38CF22C57F40D007B844C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB38CF02C57F40D007B844C /* MainViewController.swift */; };
 		AEB38CF62C57F43F007B844C /* TablePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB38CF42C57F43F007B844C /* TablePanelViewController.swift */; };
 		AEB38CFA2C57F458007B844C /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB38CF82C57F458007B844C /* ContentViewController.swift */; };
+		AEC938302C59614A00E5D1D6 /* DownloadAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC9382F2C59614A00E5D1D6 /* DownloadAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +67,7 @@
 		AEB38CCE2C534FDB007B844C /* libhemlock_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libhemlock_lib.a; path = "../../Crypto stuff/hemlock_lib/target/debug/libhemlock_lib.a"; sourceTree = "<group>"; };
 		AEB38CD22C535060007B844C /* hemlock_lib_bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hemlock_lib_bridge.h; sourceTree = "<group>"; };
 		AEB38CD52C53508D007B844C /* HLCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLCore.swift; sourceTree = "<group>"; };
-		AEB38CD72C5350A9007B844C /* Bytes+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bytes+String.swift"; sourceTree = "<group>"; };
+		AEB38CD72C5350A9007B844C /* Bytes+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bytes+Utility.swift"; sourceTree = "<group>"; };
 		AEB38CDA2C549F2C007B844C /* SavedUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedUserData.swift; sourceTree = "<group>"; };
 		AEB38CDC2C54ACC6007B844C /* UserCreds.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UserCreds.plist; sourceTree = "<group>"; };
 		AEB38CE02C55FD86007B844C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -74,6 +75,7 @@
 		AEB38CF02C57F40D007B844C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AEB38CF42C57F43F007B844C /* TablePanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablePanelViewController.swift; sourceTree = "<group>"; };
 		AEB38CF82C57F458007B844C /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		AEC9382F2C59614A00E5D1D6 /* DownloadAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,7 +182,7 @@
 			children = (
 				AEB38CD92C549F1C007B844C /* Saved Data */,
 				AEB38CD42C535084007B844C /* HL Core API */,
-				AEB38CD72C5350A9007B844C /* Bytes+String.swift */,
+				AEB38CD72C5350A9007B844C /* Bytes+Utility.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -207,6 +209,7 @@
 				AEB38CED2C57EB30007B844C /* Animations */,
 				AEB38CEC2C56E31C007B844C /* Main View */,
 				AEB38CA42C534F95007B844C /* WelcomeViewController.swift */,
+				AEC9382F2C59614A00E5D1D6 /* DownloadAccountViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				AE0CED1B2C582B6100D4E7CA /* SharesViewController.swift in Sources */,
 				AE0CED222C582B8000D4E7CA /* AccountViewController.swift in Sources */,
 				AEB38CF22C57F40D007B844C /* MainViewController.swift in Sources */,
+				AEC938302C59614A00E5D1D6 /* DownloadAccountViewController.swift in Sources */,
 				AEB38CEF2C57EBA2007B844C /* MainViewPresentationAnimation.swift in Sources */,
 				AEB38CA52C534F95007B844C /* WelcomeViewController.swift in Sources */,
 				AE0CED252C58321700D4E7CA /* SimpleAnimator.swift in Sources */,
@@ -372,7 +376,7 @@
 				AEB38CFA2C57F458007B844C /* ContentViewController.swift in Sources */,
 				AEB38CDB2C549F2C007B844C /* SavedUserData.swift in Sources */,
 				AEB38CA32C534F95007B844C /* AppDelegate.swift in Sources */,
-				AEB38CD82C5350A9007B844C /* Bytes+String.swift in Sources */,
+				AEB38CD82C5350A9007B844C /* Bytes+Utility.swift in Sources */,
 				AE0CED1E2C582B6D00D4E7CA /* FilesViewController.swift in Sources */,
 				AEB38CD62C53508D007B844C /* HLCore.swift in Sources */,
 			);

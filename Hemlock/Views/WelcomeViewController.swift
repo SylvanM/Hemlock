@@ -18,7 +18,9 @@ class WelcomeViewController: NSViewController, NSTextFieldDelegate {
     @IBOutlet weak var confirmPasswordTextField: NSSecureTextField!
     
     @IBOutlet weak var confirmButton: NSButton!
+    @IBOutlet weak var downloadAccountButton: NSButton!
     @IBOutlet weak var instructionLabel: NSTextField!
+    @IBOutlet weak var orLabel: NSTextField!
     
     // MARK: View Controller
     
@@ -34,7 +36,9 @@ class WelcomeViewController: NSViewController, NSTextFieldDelegate {
             
             confirmPasswordTextField.isHidden = true
             confirmPasswordTextField.isEnabled = false
-            
+            orLabel.isHidden = true
+            downloadAccountButton.isHidden = true
+            downloadAccountButton.isEnabled = false
             
         } else {
             shouldCreateAccount = true
@@ -50,6 +54,7 @@ class WelcomeViewController: NSViewController, NSTextFieldDelegate {
     
     override func viewDidAppear() {
         view.window?.isMovableByWindowBackground = true
+        view.window?.center()
     }
 
     override var representedObject: Any? {
@@ -142,7 +147,7 @@ class WelcomeViewController: NSViewController, NSTextFieldDelegate {
                             alert.informativeText = "A connection error occurred. Please try again."
                             alert.beginSheetModal(for: self.view.window!)
                         }
-                    case .unknownError:
+                    default:
                         DispatchQueue.main.async {
                             let alert = NSAlert()
                             alert.messageText = "Unknown Error"
